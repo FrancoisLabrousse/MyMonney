@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">My Monney</string>
+
+    <string-array name="recettes_array">
+        <item>Salaire</item>
+        <item>Pole Emploi</item>
+        <item>Allocations familiales</item>
+        <item>Pension de retraite</item>
+        <item>Pension garde d enfants</item>
+        <item>Revenus locatifs</item>
+        <item>Rente</item>
+        <item>Interets financiers</item>
+        <item>Revenus sur placements boursiers</item>
+        <item>AutoEntrepreneur</item>
+        <item>Autres</item>
+    </string-array>
+
+    <string-array name="depenses_array">
+        <item>Loyer</item>
+        <item>Alimentation</item>
+        <item>Assurance habitation</item>
+        <item>Electricité</item>
+        <item>Gaz</item>
+        <item>Eau</item>
+        <item>Internet</item>
+        <item>Telephone</item>
+        <item>Pret immobilier</item>
+        <item>Pret auto</item>
+        <item>Pret à la conso</item>
+        <item>LOA</item>
+        <item>Assurance véhicule</item>
+        <item>Carburant</item>
+        <item>Restaurant</item>
+        <item>Bar</item>
+        <item>Sorties</item>
+        <item>Cigarettes</item>
+        <item>Vacances</item>
+        <item>Travaux</item>
+        <item>Transports en commun</item>
+        <item>Sports</item>
+        <item>Peage</item>
+        <item>Coiffeur</item>
+        <item>Cadeaux</item>
+        <item>Dons</item>
+        <item>Autres</item>
+    </string-array>
+</resources>

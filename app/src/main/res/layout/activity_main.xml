@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_solde_initial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="Solde initial :"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:background="#0336FF"
+            android:onClick="addInitial"
+            android:text="Ajouter"
+            android:textColor="#FFFFFF"
+            tools:ignore="OnClick"></Button>
+
+        <EditText
+            android:id="@+id/solde_initial"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"
+            tools:text="200.00"></EditText>
+
+        <TextView
+            android:id="@+id/total_initial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="200.00 €"
+            android:textSize="25sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"></TextView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="Recettes :"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/recettes_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:background="#0336FF"
+                android:onClick="addRecettes"
+                android:text="Ajouter"
+                android:textColor="#FFFFFF"
+                tools:ignore="OnClick"></Button>
+
+
+        <Spinner
+            android:id="@+id/spinner_recettes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:entries="@array/recettes_array"></Spinner>
+
+            <EditText
+                android:id="@+id/montant_recettes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="montant"
+                android:inputType="numberDecimal"></EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_recettes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        tools:text="1400.00 €"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Dépenses :"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/depenses_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:background="#0336FF"
+            android:onClick="addDepenses"
+            android:text="ajouter"
+            android:textColor="#FFFFFF"
+            tools:ignore="OnClick"></Button>
+
+
+        <Spinner
+            android:id="@+id/spinner_depenses"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:entries="@array/depenses_array"></Spinner>
+
+        <EditText
+            android:id="@+id/montant_depenses"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="montant"
+            android:inputType="numberDecimal"></EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_depenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        tools:text="600.00 €"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#0336FF"
+        tools:text="2800"></TextView>
+
+</LinearLayout>
